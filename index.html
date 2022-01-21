@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="home">
+<head>
+	<meta charset="utf-8">
+	<title>x</title>
+
+	<style>
+		.quakelight,
+		.customele,
+		.customele2 {
+			width: 10em;
+			height: 10em;
+			background: #007aff;
+		}
+
+		.customele,
+		.customele2 {
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="demo">
+		<div class="quakelight"></div>
+		
+		<div class="quakelight" data-preset="10" ></div>
+		
+		<div class="quakelight" data-lightstring="mmmaaamabcdezzzaaa" ></div>
+		
+		<div class="customele"></div>
+
+		<div class="customele2"></div>
+	</div>
+
+	<script type="module">
+		import { quakelight } from './lights.js'
+
+		// elements with class .quakelight will be processed automatically
+		const ql = new quakelight();
+
+		// add to element manually
+		ql.add(document.querySelector('.customele'), 3);
+		ql.add(document.querySelector('.customele2'), 'aaaaaammmmzzzzzmmmmm');
+
+
+		setTimeout(function () {
+			// remove from single element
+			//ql.remove(document.querySelector('.quakelight'));
+			
+			// stop all quakelight animation
+			ql.removeAll();
+		}, 5000);
+	</script>
+</body>
+</html>
