@@ -32,4 +32,51 @@ ql.removeAll();
 ```
 
 ### Demo
+
 https://oelna.github.io/quakelight-esm/ (stops after 5 seconds)
+
+### Presets
+
+The 11 available presets are as in the original Quake source code:
+
+```javascript
+// 0 normal
+"m"
+
+// 1 FLICKER (first variety)
+"mmnmmommommnonmmonqnmmo"
+
+// 2 SLOW STRONG PULSE
+"abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba"
+
+// 3 CANDLE (first variety)
+"mmmmmaaaaammmmmaaaaaabcdefgabcdefg"
+
+// 4 FAST STROBE
+"mamamamamama"
+
+// 5 GENTLE PULSE 1
+"jklmnopqrstuvwxyzyxwvutsrqponmlkj"
+
+// 6 FLICKER (second variety)
+"nmonqnmomnmomomno"
+
+// 7 CANDLE (second variety)
+"mmmaaaabcdefgmmmmaaaammmaamm"
+
+// 8 CANDLE (third variety)
+"mmmaaammmaaammmabcdefaaaammmmabcdefmmmaaaa"
+
+// 9 SLOW STROBE (fourth variety)
+"aaaaaaaazzzzzzzz"
+
+// 10 FLUORESCENT FLICKER
+"mmamammmmammamamaaamammma"
+
+// 11 SLOW PULSE NOT FADE TO BLACK
+"abcdefghijklmnopqrrqponmlkjihgfedcba"
+```
+
+### Todo
+
+It may be interesting (and more performant) to build this in a way that produces a CSS keyframe animation from the string instead of the JS loop.
