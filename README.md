@@ -79,4 +79,5 @@ The 11 available presets are as in the original Quake source code:
 
 ### Todo
 
-It may be interesting (and more performant) to build this in a way that produces a CSS keyframe animation from the string instead of the JS loop.
+- It may be interesting (and more performant) to build this in a way that produces a CSS keyframe animation from the string instead of the JS loop.
+- There should be a way to specify that the animation only runs once, such as a light turning on or a machine powering up
